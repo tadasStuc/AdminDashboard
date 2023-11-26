@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Table]
+(
+	 [Id]                           INT            NOT NULL,
+    [referenceNumber]              INT            NULL,
+    [companyName]                  VARCHAR (150)  NULL,
+    [softwarename]                 VARCHAR (MAX)  NULL,
+    [companyWebsite]               NCHAR (100)    NULL,
+    [softwareType]                 VARCHAR (150)  NULL,
+    [description]                  VARCHAR (500)  NULL,
+    [companyEstablished]           DATE           NULL,
+    [locationCountries]            VARCHAR (150)  NULL,
+    [locationCities]               VARCHAR (150)  NULL,
+    [phoneNumber]                  VARCHAR (150)  NULL,
+    [address]                      NVARCHAR (150) NULL,
+    [employeeCount]                INT            NULL,
+    [internalProfessionalServices] BIT            NULL,
+    [lastDemoDate]                 DATE           NULL,
+    [lastReviewedDate]             DATE           NULL,
+    [businessAreas]                VARCHAR (150)  NULL,
+    [modules]                      VARCHAR (150)  NULL,
+    [clientTypes]                  VARCHAR (150)  NULL,
+    [cloudType]                    BIT            NULL,
+    [additionalInformation]        VARCHAR (150)  NULL,
+    [documentAttached]             BIT            NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+)
