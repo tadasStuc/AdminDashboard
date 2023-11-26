@@ -109,6 +109,18 @@
     <Compile Include="UserControls\ucVendors.Designer.cs">
       <DependentUpon>ucVendors.cs</DependentUpon>
     </Compile>
+    <Compile Include="vendorAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendorAdd.Designer.cs">
+      <DependentUpon>vendorAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vendorManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendorManage.Designer.cs">
+      <DependentUpon>vendorManage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="employeeManage.resx">
       <DependentUpon>employeeManage.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +150,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucVendors.resx">
       <DependentUpon>ucVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendorAdd.resx">
+      <DependentUpon>vendorAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendorManage.resx">
+      <DependentUpon>vendorManage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

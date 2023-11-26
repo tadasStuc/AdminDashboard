@@ -15,7 +15,6 @@ namespace AdminDashboard.UserControls
         public ucEmployees()
         {
             InitializeComponent();
-      
         }
 
       
@@ -23,12 +22,18 @@ namespace AdminDashboard.UserControls
         private void button1_Click(object sender, EventArgs e)
         {
             employeeAdd employee = new employeeAdd();
+            employee.TopLevel = false;
+            panel2.Controls.Add(employee);
+            employee.BringToFront();
             employee.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             employeeManage employee = new employeeManage();
+            employee.TopLevel = false;
+            panel2.Controls.Add(employee);
+            employee.BringToFront();
             employee.Show();
         }
 

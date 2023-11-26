@@ -21,5 +21,23 @@ namespace AdminDashboard.UserControls
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            vendorAdd vendor = new vendorAdd();
+            vendor.TopLevel = false;
+            panel2.Controls.Add(vendor);
+            vendor.BringToFront();
+            vendor.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            vendorManage vendor = new vendorManage();
+            vendor.TopLevel = false;
+            panel2.Controls.Add(vendor);
+            vendor.BringToFront();
+            vendor.Show();
+        }
     }
 }
