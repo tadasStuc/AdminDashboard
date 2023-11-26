@@ -18,7 +18,7 @@ namespace AdminDashboard.UserControls
         }
 
       
-
+        // opens employeeAdd form inside the current form
         private void button1_Click(object sender, EventArgs e)
         {
             employeeAdd employee = new employeeAdd();
@@ -28,6 +28,7 @@ namespace AdminDashboard.UserControls
             employee.Show();
         }
 
+        // opens employeeManage form inside the current form
         private void button2_Click(object sender, EventArgs e)
         {
             employeeManage employee = new employeeManage();

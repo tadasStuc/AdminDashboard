@@ -21,7 +21,7 @@ namespace AdminDashboard.UserControls
         {
 
         }
-
+        // opens the vendorAdd form
         private void button1_Click(object sender, EventArgs e)
         {
             vendorAdd vendor = new vendorAdd();
@@ -30,7 +30,8 @@ namespace AdminDashboard.UserControls
             vendor.BringToFront();
             vendor.Show();
         }
-
+        
+        // opens the vendorManage form
         private void button2_Click(object sender, EventArgs e)
         {
             vendorManage vendor = new vendorManage();

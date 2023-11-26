@@ -16,7 +16,7 @@ namespace AdminDashboard
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -37,11 +37,6 @@ namespace AdminDashboard
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.tableBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.database21DataSet);
-        }
+
     }
 }
