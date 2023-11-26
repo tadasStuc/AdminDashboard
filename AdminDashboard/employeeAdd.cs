@@ -36,5 +36,12 @@ namespace AdminDashboard
             this.tableTableAdapter.Fill(this.database21DataSet.Table);
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tableBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database21DataSet);
+        }
     }
 }
