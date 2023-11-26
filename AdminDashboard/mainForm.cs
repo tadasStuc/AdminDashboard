@@ -51,5 +51,10 @@ namespace AdminDashboard
             ucLogout ucLogout = new ucLogout();
             addUserControl(ucLogout);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
