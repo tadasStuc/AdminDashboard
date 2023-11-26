@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace AdminDashboard
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
             ucHome uc = new ucHome();

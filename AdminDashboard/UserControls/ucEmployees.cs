@@ -22,8 +22,8 @@ namespace AdminDashboard.UserControls
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var employeeAdd = new employeeAdd();
-            employeeAdd.Show();
+            employeeAdd employee = new employeeAdd();
+            employee.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
