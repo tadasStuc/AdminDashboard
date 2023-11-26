@@ -37,35 +37,36 @@
             System.Windows.Forms.Label roleLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(employeeAdd));
             this.tableBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database21DataSet = new AdminDashboard.Database21DataSet();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.tableBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.tableDataGridView = new System.Windows.Forms.DataGridView();
-            this.idTextBox = new System.Windows.Forms.TextBox();
-            this.employeeIDTextBox = new System.Windows.Forms.TextBox();
-            this.employeeFirstNameTextBox = new System.Windows.Forms.TextBox();
-            this.employeeLastNameTextBox = new System.Windows.Forms.TextBox();
-            this.dateOfBirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.roleTextBox = new System.Windows.Forms.TextBox();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database21DataSet = new AdminDashboard.Database21DataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.employeeIDTextBox = new System.Windows.Forms.TextBox();
+            this.employeeFirstNameTextBox = new System.Windows.Forms.TextBox();
+            this.employeeLastNameTextBox = new System.Windows.Forms.TextBox();
+            this.dateOfBirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.roleTextBox = new System.Windows.Forms.TextBox();
             this.tableTableAdapter = new AdminDashboard.Database21DataSetTableAdapters.TableTableAdapter();
             this.tableAdapterManager = new AdminDashboard.Database21DataSetTableAdapters.TableAdapterManager();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
             idLabel = new System.Windows.Forms.Label();
             employeeIDLabel = new System.Windows.Forms.Label();
             employeeFirstNameLabel = new System.Windows.Forms.Label();
@@ -74,10 +75,64 @@
             roleLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).BeginInit();
             this.tableBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database21DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(207, 239);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.TabIndex = 2;
+            idLabel.Text = "Id:";
+            // 
+            // employeeIDLabel
+            // 
+            employeeIDLabel.AutoSize = true;
+            employeeIDLabel.Location = new System.Drawing.Point(157, 265);
+            employeeIDLabel.Name = "employeeIDLabel";
+            employeeIDLabel.Size = new System.Drawing.Size(69, 13);
+            employeeIDLabel.TabIndex = 4;
+            employeeIDLabel.Text = "employee ID:";
+            // 
+            // employeeFirstNameLabel
+            // 
+            employeeFirstNameLabel.AutoSize = true;
+            employeeFirstNameLabel.Location = new System.Drawing.Point(118, 291);
+            employeeFirstNameLabel.Name = "employeeFirstNameLabel";
+            employeeFirstNameLabel.Size = new System.Drawing.Size(108, 13);
+            employeeFirstNameLabel.TabIndex = 6;
+            employeeFirstNameLabel.Text = "employee First Name:";
+            // 
+            // employeeLastNameLabel
+            // 
+            employeeLastNameLabel.AutoSize = true;
+            employeeLastNameLabel.Location = new System.Drawing.Point(117, 317);
+            employeeLastNameLabel.Name = "employeeLastNameLabel";
+            employeeLastNameLabel.Size = new System.Drawing.Size(109, 13);
+            employeeLastNameLabel.TabIndex = 8;
+            employeeLastNameLabel.Text = "employee Last Name:";
+            // 
+            // dateOfBirthLabel
+            // 
+            dateOfBirthLabel.AutoSize = true;
+            dateOfBirthLabel.Location = new System.Drawing.Point(157, 370);
+            dateOfBirthLabel.Name = "dateOfBirthLabel";
+            dateOfBirthLabel.Size = new System.Drawing.Size(69, 13);
+            dateOfBirthLabel.TabIndex = 10;
+            dateOfBirthLabel.Text = "date Of Birth:";
+            // 
+            // roleLabel
+            // 
+            roleLabel.AutoSize = true;
+            roleLabel.Location = new System.Drawing.Point(199, 343);
+            roleLabel.Name = "roleLabel";
+            roleLabel.Size = new System.Drawing.Size(27, 13);
+            roleLabel.TabIndex = 12;
+            roleLabel.Text = "role:";
             // 
             // tableBindingNavigator
             // 
@@ -109,6 +164,41 @@
             this.tableBindingNavigator.TabIndex = 0;
             this.tableBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.database21DataSet;
+            // 
+            // database21DataSet
+            // 
+            this.database21DataSet.DataSetName = "Database21DataSet";
+            this.database21DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -136,21 +226,15 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -173,17 +257,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // tableBindingNavigatorSaveItem
             // 
@@ -210,118 +285,6 @@
             this.tableDataGridView.Name = "tableDataGridView";
             this.tableDataGridView.Size = new System.Drawing.Size(643, 220);
             this.tableDataGridView.TabIndex = 1;
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(207, 239);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 2;
-            idLabel.Text = "Id:";
-            // 
-            // idTextBox
-            // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(232, 236);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 3;
-            // 
-            // employeeIDLabel
-            // 
-            employeeIDLabel.AutoSize = true;
-            employeeIDLabel.Location = new System.Drawing.Point(157, 265);
-            employeeIDLabel.Name = "employeeIDLabel";
-            employeeIDLabel.Size = new System.Drawing.Size(69, 13);
-            employeeIDLabel.TabIndex = 4;
-            employeeIDLabel.Text = "employee ID:";
-            // 
-            // employeeIDTextBox
-            // 
-            this.employeeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeID", true));
-            this.employeeIDTextBox.Location = new System.Drawing.Point(232, 262);
-            this.employeeIDTextBox.Name = "employeeIDTextBox";
-            this.employeeIDTextBox.Size = new System.Drawing.Size(100, 20);
-            this.employeeIDTextBox.TabIndex = 5;
-            // 
-            // employeeFirstNameLabel
-            // 
-            employeeFirstNameLabel.AutoSize = true;
-            employeeFirstNameLabel.Location = new System.Drawing.Point(118, 291);
-            employeeFirstNameLabel.Name = "employeeFirstNameLabel";
-            employeeFirstNameLabel.Size = new System.Drawing.Size(108, 13);
-            employeeFirstNameLabel.TabIndex = 6;
-            employeeFirstNameLabel.Text = "employee First Name:";
-            // 
-            // employeeFirstNameTextBox
-            // 
-            this.employeeFirstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeFirstName", true));
-            this.employeeFirstNameTextBox.Location = new System.Drawing.Point(232, 288);
-            this.employeeFirstNameTextBox.Name = "employeeFirstNameTextBox";
-            this.employeeFirstNameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.employeeFirstNameTextBox.TabIndex = 7;
-            // 
-            // employeeLastNameLabel
-            // 
-            employeeLastNameLabel.AutoSize = true;
-            employeeLastNameLabel.Location = new System.Drawing.Point(117, 317);
-            employeeLastNameLabel.Name = "employeeLastNameLabel";
-            employeeLastNameLabel.Size = new System.Drawing.Size(109, 13);
-            employeeLastNameLabel.TabIndex = 8;
-            employeeLastNameLabel.Text = "employee Last Name:";
-            // 
-            // employeeLastNameTextBox
-            // 
-            this.employeeLastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeLastName", true));
-            this.employeeLastNameTextBox.Location = new System.Drawing.Point(232, 314);
-            this.employeeLastNameTextBox.Name = "employeeLastNameTextBox";
-            this.employeeLastNameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.employeeLastNameTextBox.TabIndex = 9;
-            // 
-            // dateOfBirthLabel
-            // 
-            dateOfBirthLabel.AutoSize = true;
-            dateOfBirthLabel.Location = new System.Drawing.Point(157, 370);
-            dateOfBirthLabel.Name = "dateOfBirthLabel";
-            dateOfBirthLabel.Size = new System.Drawing.Size(69, 13);
-            dateOfBirthLabel.TabIndex = 10;
-            dateOfBirthLabel.Text = "date Of Birth:";
-            // 
-            // dateOfBirthDateTimePicker
-            // 
-            this.dateOfBirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tableBindingSource, "dateOfBirth", true));
-            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(232, 366);
-            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
-            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.dateOfBirthDateTimePicker.TabIndex = 11;
-            // 
-            // roleLabel
-            // 
-            roleLabel.AutoSize = true;
-            roleLabel.Location = new System.Drawing.Point(199, 343);
-            roleLabel.Name = "roleLabel";
-            roleLabel.Size = new System.Drawing.Size(27, 13);
-            roleLabel.TabIndex = 12;
-            roleLabel.Text = "role:";
-            // 
-            // roleTextBox
-            // 
-            this.roleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "role", true));
-            this.roleTextBox.Location = new System.Drawing.Point(232, 340);
-            this.roleTextBox.Name = "roleTextBox";
-            this.roleTextBox.Size = new System.Drawing.Size(100, 20);
-            this.roleTextBox.TabIndex = 13;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.database21DataSet;
-            // 
-            // database21DataSet
-            // 
-            this.database21DataSet.DataSetName = "Database21DataSet";
-            this.database21DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -359,6 +322,54 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "role";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
+            // idTextBox
+            // 
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Id", true));
+            this.idTextBox.Location = new System.Drawing.Point(232, 236);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTextBox.TabIndex = 3;
+            // 
+            // employeeIDTextBox
+            // 
+            this.employeeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeID", true));
+            this.employeeIDTextBox.Location = new System.Drawing.Point(232, 262);
+            this.employeeIDTextBox.Name = "employeeIDTextBox";
+            this.employeeIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.employeeIDTextBox.TabIndex = 5;
+            // 
+            // employeeFirstNameTextBox
+            // 
+            this.employeeFirstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeFirstName", true));
+            this.employeeFirstNameTextBox.Location = new System.Drawing.Point(232, 288);
+            this.employeeFirstNameTextBox.Name = "employeeFirstNameTextBox";
+            this.employeeFirstNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.employeeFirstNameTextBox.TabIndex = 7;
+            // 
+            // employeeLastNameTextBox
+            // 
+            this.employeeLastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeLastName", true));
+            this.employeeLastNameTextBox.Location = new System.Drawing.Point(232, 314);
+            this.employeeLastNameTextBox.Name = "employeeLastNameTextBox";
+            this.employeeLastNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.employeeLastNameTextBox.TabIndex = 9;
+            // 
+            // dateOfBirthDateTimePicker
+            // 
+            this.dateOfBirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tableBindingSource, "dateOfBirth", true));
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(232, 366);
+            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
+            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateOfBirthDateTimePicker.TabIndex = 11;
+            // 
+            // roleTextBox
+            // 
+            this.roleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "role", true));
+            this.roleTextBox.Location = new System.Drawing.Point(232, 340);
+            this.roleTextBox.Name = "roleTextBox";
+            this.roleTextBox.Size = new System.Drawing.Size(100, 20);
+            this.roleTextBox.TabIndex = 13;
+            // 
             // tableTableAdapter
             // 
             this.tableTableAdapter.ClearBeforeFill = true;
@@ -369,20 +380,27 @@
             this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
             this.tableAdapterManager.UpdateOrder = AdminDashboard.Database21DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // bindingNavigatorAddNewItem
+            // button1
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(232, 401);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 36);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Add Employee";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // employeeAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 633);
+            this.Controls.Add(this.button1);
             this.Controls.Add(roleLabel);
             this.Controls.Add(this.roleTextBox);
             this.Controls.Add(dateOfBirthLabel);
@@ -404,9 +422,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).EndInit();
             this.tableBindingNavigator.ResumeLayout(false);
             this.tableBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database21DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,5 +462,6 @@
         private System.Windows.Forms.DateTimePicker dateOfBirthDateTimePicker;
         private System.Windows.Forms.TextBox roleTextBox;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.Button button1;
     }
 }

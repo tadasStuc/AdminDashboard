@@ -36,5 +36,10 @@ namespace AdminDashboard
             this.tableAdapterManager.UpdateAll(this.database21DataSet);
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
