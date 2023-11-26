@@ -28,208 +28,421 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(employeeAdd));
+            System.Windows.Forms.Label idLabel;
+            System.Windows.Forms.Label employeeIDLabel;
+            System.Windows.Forms.Label employeeFirstNameLabel;
+            System.Windows.Forms.Label employeeLastNameLabel;
+            System.Windows.Forms.Label dateOfBirthLabel;
+            System.Windows.Forms.Label roleLabel;
+            this.database21DataSet = new AdminDashboard.Database21DataSet();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableTableAdapter = new AdminDashboard.Database21DataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new AdminDashboard.Database21DataSetTableAdapters.TableAdapterManager();
+            this.tableBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.tableBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.tableDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.employeeIDTextBox = new System.Windows.Forms.TextBox();
+            this.employeeFirstNameTextBox = new System.Windows.Forms.TextBox();
+            this.employeeLastNameTextBox = new System.Windows.Forms.TextBox();
+            this.dateOfBirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.roleTextBox = new System.Windows.Forms.TextBox();
+            idLabel = new System.Windows.Forms.Label();
+            employeeIDLabel = new System.Windows.Forms.Label();
+            employeeFirstNameLabel = new System.Windows.Forms.Label();
+            employeeLastNameLabel = new System.Windows.Forms.Label();
+            dateOfBirthLabel = new System.Windows.Forms.Label();
+            roleLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.database21DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).BeginInit();
+            this.tableBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // database21DataSet
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(196, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Employee ID";
+            this.database21DataSet.DataSetName = "Database21DataSet";
+            this.database21DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox1
+            // tableBindingSource
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 142);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 20);
-            this.textBox1.TabIndex = 3;
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.database21DataSet;
             // 
-            // textBox2
+            // tableTableAdapter
             // 
-            this.textBox2.Location = new System.Drawing.Point(199, 209);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 20);
-            this.textBox2.TabIndex = 5;
+            this.tableTableAdapter.ClearBeforeFill = true;
             // 
-            // label3
+            // tableAdapterManager
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(196, 179);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "First Name";
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
+            this.tableAdapterManager.UpdateOrder = AdminDashboard.Database21DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // textBox3
+            // tableBindingNavigator
             // 
-            this.textBox3.Location = new System.Drawing.Point(199, 276);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 20);
-            this.textBox3.TabIndex = 7;
+            this.tableBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.tableBindingNavigator.BindingSource = this.tableBindingSource;
+            this.tableBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.tableBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.tableBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.tableBindingNavigatorSaveItem});
+            this.tableBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.tableBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.tableBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.tableBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.tableBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.tableBindingNavigator.Name = "tableBindingNavigator";
+            this.tableBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.tableBindingNavigator.Size = new System.Drawing.Size(1336, 25);
+            this.tableBindingNavigator.TabIndex = 0;
+            this.tableBindingNavigator.Text = "bindingNavigator1";
             // 
-            // label4
+            // bindingNavigatorMoveFirstItem
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(196, 246);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Last Name";
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
-            // textBox4
+            // bindingNavigatorMovePreviousItem
             // 
-            this.textBox4.Location = new System.Drawing.Point(199, 343);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(131, 20);
-            this.textBox4.TabIndex = 9;
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
-            // label5
+            // bindingNavigatorSeparator
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(196, 313);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 16);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Date Of Birth";
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
             // 
-            // label6
+            // bindingNavigatorPositionItem
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(196, 380);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 16);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Role";
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // comboBox1
+            // bindingNavigatorCountItem
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Junior Employee",
-            "Senior Employee"});
-            this.comboBox1.Location = new System.Drawing.Point(199, 410);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(131, 21);
-            this.comboBox1.TabIndex = 11;
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
-            // button2
+            // bindingNavigatorSeparator1
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(199, 448);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Add to system";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
-            // dataGridView1
+            // bindingNavigatorMoveNextItem
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(601, 112);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(540, 409);
-            this.dataGridView1.TabIndex = 13;
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
-            // Column1
+            // bindingNavigatorMoveLastItem
             // 
-            this.Column1.HeaderText = "EmployeeID";
-            this.Column1.Name = "Column1";
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
-            // Column2
+            // bindingNavigatorSeparator2
             // 
-            this.Column2.HeaderText = "FirstName";
-            this.Column2.Name = "Column2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
             // 
-            // Column3
+            // bindingNavigatorAddNewItem
             // 
-            this.Column3.HeaderText = "LastName";
-            this.Column3.Name = "Column3";
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
-            // Column4
+            // bindingNavigatorDeleteItem
             // 
-            this.Column4.HeaderText = "DOB";
-            this.Column4.Name = "Column4";
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
-            // Column5
+            // tableBindingNavigatorSaveItem
             // 
-            this.Column5.HeaderText = "Role";
-            this.Column5.Name = "Column5";
+            this.tableBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tableBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tableBindingNavigatorSaveItem.Image")));
+            this.tableBindingNavigatorSaveItem.Name = "tableBindingNavigatorSaveItem";
+            this.tableBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.tableBindingNavigatorSaveItem.Text = "Save Data";
+            this.tableBindingNavigatorSaveItem.Click += new System.EventHandler(this.tableBindingNavigatorSaveItem_Click);
+            // 
+            // tableDataGridView
+            // 
+            this.tableDataGridView.AutoGenerateColumns = false;
+            this.tableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.tableDataGridView.DataSource = this.tableBindingSource;
+            this.tableDataGridView.Location = new System.Drawing.Point(681, 28);
+            this.tableDataGridView.Name = "tableDataGridView";
+            this.tableDataGridView.Size = new System.Drawing.Size(643, 220);
+            this.tableDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "employeeID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "employeeID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "employeeFirstName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "employeeFirstName";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "employeeLastName";
+            this.dataGridViewTextBoxColumn4.HeaderText = "employeeLastName";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "dateOfBirth";
+            this.dataGridViewTextBoxColumn5.HeaderText = "dateOfBirth";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "role";
+            this.dataGridViewTextBoxColumn6.HeaderText = "role";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(127, 86);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.TabIndex = 2;
+            idLabel.Text = "Id:";
+            // 
+            // idTextBox
+            // 
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Id", true));
+            this.idTextBox.Location = new System.Drawing.Point(152, 83);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTextBox.TabIndex = 3;
+            // 
+            // employeeIDLabel
+            // 
+            employeeIDLabel.AutoSize = true;
+            employeeIDLabel.Location = new System.Drawing.Point(77, 112);
+            employeeIDLabel.Name = "employeeIDLabel";
+            employeeIDLabel.Size = new System.Drawing.Size(69, 13);
+            employeeIDLabel.TabIndex = 4;
+            employeeIDLabel.Text = "employee ID:";
+            // 
+            // employeeIDTextBox
+            // 
+            this.employeeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeID", true));
+            this.employeeIDTextBox.Location = new System.Drawing.Point(152, 109);
+            this.employeeIDTextBox.Name = "employeeIDTextBox";
+            this.employeeIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.employeeIDTextBox.TabIndex = 5;
+            // 
+            // employeeFirstNameLabel
+            // 
+            employeeFirstNameLabel.AutoSize = true;
+            employeeFirstNameLabel.Location = new System.Drawing.Point(38, 138);
+            employeeFirstNameLabel.Name = "employeeFirstNameLabel";
+            employeeFirstNameLabel.Size = new System.Drawing.Size(108, 13);
+            employeeFirstNameLabel.TabIndex = 6;
+            employeeFirstNameLabel.Text = "employee First Name:";
+            // 
+            // employeeFirstNameTextBox
+            // 
+            this.employeeFirstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeFirstName", true));
+            this.employeeFirstNameTextBox.Location = new System.Drawing.Point(152, 135);
+            this.employeeFirstNameTextBox.Name = "employeeFirstNameTextBox";
+            this.employeeFirstNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.employeeFirstNameTextBox.TabIndex = 7;
+            // 
+            // employeeLastNameLabel
+            // 
+            employeeLastNameLabel.AutoSize = true;
+            employeeLastNameLabel.Location = new System.Drawing.Point(37, 164);
+            employeeLastNameLabel.Name = "employeeLastNameLabel";
+            employeeLastNameLabel.Size = new System.Drawing.Size(109, 13);
+            employeeLastNameLabel.TabIndex = 8;
+            employeeLastNameLabel.Text = "employee Last Name:";
+            // 
+            // employeeLastNameTextBox
+            // 
+            this.employeeLastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "employeeLastName", true));
+            this.employeeLastNameTextBox.Location = new System.Drawing.Point(152, 161);
+            this.employeeLastNameTextBox.Name = "employeeLastNameTextBox";
+            this.employeeLastNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.employeeLastNameTextBox.TabIndex = 9;
+            // 
+            // dateOfBirthLabel
+            // 
+            dateOfBirthLabel.AutoSize = true;
+            dateOfBirthLabel.Location = new System.Drawing.Point(77, 217);
+            dateOfBirthLabel.Name = "dateOfBirthLabel";
+            dateOfBirthLabel.Size = new System.Drawing.Size(69, 13);
+            dateOfBirthLabel.TabIndex = 10;
+            dateOfBirthLabel.Text = "date Of Birth:";
+            // 
+            // dateOfBirthDateTimePicker
+            // 
+            this.dateOfBirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tableBindingSource, "dateOfBirth", true));
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(152, 213);
+            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
+            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateOfBirthDateTimePicker.TabIndex = 11;
+            // 
+            // roleLabel
+            // 
+            roleLabel.AutoSize = true;
+            roleLabel.Location = new System.Drawing.Point(119, 190);
+            roleLabel.Name = "roleLabel";
+            roleLabel.Size = new System.Drawing.Size(27, 13);
+            roleLabel.TabIndex = 12;
+            roleLabel.Text = "role:";
+            // 
+            // roleTextBox
+            // 
+            this.roleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "role", true));
+            this.roleTextBox.Location = new System.Drawing.Point(152, 187);
+            this.roleTextBox.Name = "roleTextBox";
+            this.roleTextBox.Size = new System.Drawing.Size(100, 20);
+            this.roleTextBox.TabIndex = 13;
             // 
             // employeeAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 633);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(roleLabel);
+            this.Controls.Add(this.roleTextBox);
+            this.Controls.Add(dateOfBirthLabel);
+            this.Controls.Add(this.dateOfBirthDateTimePicker);
+            this.Controls.Add(employeeLastNameLabel);
+            this.Controls.Add(this.employeeLastNameTextBox);
+            this.Controls.Add(employeeFirstNameLabel);
+            this.Controls.Add(this.employeeFirstNameTextBox);
+            this.Controls.Add(employeeIDLabel);
+            this.Controls.Add(this.employeeIDTextBox);
+            this.Controls.Add(idLabel);
+            this.Controls.Add(this.idTextBox);
+            this.Controls.Add(this.tableDataGridView);
+            this.Controls.Add(this.tableBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "employeeAdd";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.employeeAdd_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.database21DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).EndInit();
+            this.tableBindingNavigator.ResumeLayout(false);
+            this.tableBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+
+        private Database21DataSet database21DataSet;
+        private System.Windows.Forms.BindingSource tableBindingSource;
+        private Database21DataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Database21DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator tableBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton tableBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView tableDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.TextBox employeeIDTextBox;
+        private System.Windows.Forms.TextBox employeeFirstNameTextBox;
+        private System.Windows.Forms.TextBox employeeLastNameTextBox;
+        private System.Windows.Forms.DateTimePicker dateOfBirthDateTimePicker;
+        private System.Windows.Forms.TextBox roleTextBox;
     }
 }

@@ -56,5 +56,10 @@ namespace AdminDashboard
         {
             Application.Exit();
         }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
