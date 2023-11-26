@@ -16,7 +16,7 @@ namespace AdminDashboard
         public mainForm()
         {
             InitializeComponent();
-            ucHome uc = new ucHome();
+            ucOverview uc = new ucOverview();
             addUserControl(uc);
         }
 
@@ -30,7 +30,7 @@ namespace AdminDashboard
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ucHome uc = new ucHome();
+            ucOverview uc = new ucOverview();
             addUserControl(uc);
         }
 

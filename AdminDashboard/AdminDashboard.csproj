@@ -91,11 +91,11 @@
     <Compile Include="UserControls\ucEmployees.Designer.cs">
       <DependentUpon>ucEmployees.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucHome.cs">
+    <Compile Include="UserControls\ucOverview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ucHome.Designer.cs">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <Compile Include="UserControls\ucOverview.Designer.cs">
+      <DependentUpon>ucOverview.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ucLogout.cs">
       <SubType>UserControl</SubType>
@@ -142,8 +142,8 @@
     <EmbeddedResource Include="UserControls\ucEmployees.resx">
       <DependentUpon>ucEmployees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucHome.resx">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ucOverview.resx">
+      <DependentUpon>ucOverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucLogout.resx">
       <DependentUpon>ucLogout.cs</DependentUpon>
