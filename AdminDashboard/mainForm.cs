@@ -31,7 +31,7 @@ namespace AdminDashboard
             panelContainer.Controls.Add(userControl);
             userControl.BringToFront();
         }
-
+        // these buttons open the form inside current form for better user experience
         private void button1_Click(object sender, EventArgs e)
         {
             ucOverview uc = new ucOverview();
