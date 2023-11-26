@@ -15,6 +15,22 @@ namespace AdminDashboard.UserControls
         public ucEmployees()
         {
             InitializeComponent();
+      
         }
+
+      
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var employeeAdd = new employeeAdd();
+            employeeAdd.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
 }

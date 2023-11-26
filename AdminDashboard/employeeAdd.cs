@@ -8,23 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AdminDashboard.UserControls
+namespace AdminDashboard
 {
-    public partial class ucLogout : UserControl
+    public partial class employeeAdd : Form
     {
-        public ucLogout()
+        public employeeAdd()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            // code to logout
             Application.Exit();
         }
     }
